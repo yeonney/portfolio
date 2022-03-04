@@ -19,10 +19,10 @@
     font-weight: 400;
     src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/hani/Hankc/Hankc.woff') format('woff');
   }
-  
+/*   
   .hankc * {
    font-family: 'Hankc', serif;
-  }
+  } */
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
@@ -33,6 +33,7 @@ a {
 }
 html, body {
     color : #333;
+    min-width: 1280px;
 }
 
 /* header */
