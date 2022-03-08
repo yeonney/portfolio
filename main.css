@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'LeferiBaseType-RegularA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiBaseType-RegularA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+html, body {
+    color : #333;
+    min-width: 1280px;
+}
+
+/* header */
+header {
+    height: 80px;
+    line-height: 80px;
+}
+header div {
+    font-family: 'S-CoreDream-3Light';
+    width: 1280px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header div h1 a {
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+    font-size : 28px;
+}
+
+/* main visual */
+.main_visual {
+    font-family: 'LeferiBaseType-RegularA';
+    width: 100%;
+    height: 800px;
+    background: url('../images/plus/03.avif') center center / cover no-repeat;
+    /* css파일에서 뎃고 올때는 파일 경로 잘 확인할 것 */
+    background-attachment: fixed;
+    color: rgb(255, 255, 250);
+    display: flex;
+    align-items: center; /* 수직정렬 */
+    justify-content: center; /* 수평정렬 */
+}
+.main_visual div {
+    text-align: center;
+}
+.main_visual div h2 {
+    font-size: 80px;
+}
+.main_visual div p {
+    font-size: 30px;
+    margin-top: 30px;
+    color: rgb(255, 255, 250,0.7);
+}
+
+/* best portfolio */
+.best {
+    margin: 150px 0;
+}
+.best h3 {
+    font-family: 'LeferiBaseType-RegularA';
+    color: #ffcbe8;
+    text-shadow: 2px 0px 0px #ccc;
+    font-size: 45px;
+    text-align: right;
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.best .bg {
+    background-color: #fbf0f7;
+    padding: 100px 0;
+
+}
+.best .bg .best_box {
+    margin-bottom: 0;
+}
+.best .best_box {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    width: 1280px;
+    margin: 0 auto;
+    display : flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.best .best_box .info {
+    width:40%;
+ }
+
+.best .bg .best_box .info {
+    padding-top: 40px;
+}
+.best .best_box .info .cate {
+    font-size: 18px;
+    font-weight: bold;
+}
+.best .best_box .info .h4 {
+    font-size: 30px;
+}
+.best .best_box .info .text {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height : 1.5; /* 16x1.5 =>24 계산 안되는 경우 이런식으로 숫자 쓰면 배수 사용 가능*/
+}
+.best .best_box .info dl {
+    display: flex;
+    margin-bottom: 10px;
+}
+.best .best_box .info dl dt  {
+    width: 20%;
+    font-weight: bold;
+}
+.best .best_box .info ul {
+    display: flex;
+    margin-top: 30px;
+
+}
+.best .best_box .info ul li {
+    height: 45px;
+    line-height: 45px;
+    border : 1px solid #555;
+    margin-right: 10px;
+   }
+   .best .best_box .info ul li a {
+       padding:0 25px;
+   }
+   .best .best_box .info ul li:first-of-type {
+       /* background-color: #333; */
+        /* background: rgb(191,255,189);
+        background: linear-gradient(90deg, rgba(191,255,189,1) 0%, rgba(190,198,255,1) 100%); */
+        /* background: #ffc1e4; */
+        border : 1px solid #ff83c7;
+        box-shadow: 2px 2px 7px #ffdaee;
+   }
+   .best .best_box .info ul li:first-of-type a {
+       color : #ff83c7;
+   }
+
+   .best .best_box .info ul li:nth-of-type(1):hover {
+       background-color: #ffa6d7;
+       transition :0.8s;
+   }
+   .best .best_box .info ul li:nth-of-type(1):hover a {
+        color : #fff;
+        font-weight: bold;
+    }
+   .best .best_box .info ul li:nth-of-type(2):hover {
+       background-color: #555;
+       transition :0.8s;
+   }
+   .best .best_box .info ul li:nth-of-type(2):hover a {
+        color : #fff;
+        font-weight: bold;
+    }
+   .best .best_box .youtube_list {
+     width: 55%;
+ }
+
+ .best .best_box .youtube_list div {
+     width: 100%;
+     padding-bottom: 56.25%;
+     position: relative;
+ }
+ .best .best_box .youtube_list div iframe{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+
+ .best .best_box .web_design {
+     width: 55%;
+ }
+ .best .best_box .web_design figure img {
+     width: 100%;
+
+ }
+
+ /* 카테고리별 유튜브 적용 */
+ .youtube_wrap {
+     margin: 150px 0;
+ }
+ .youtube_wrap h3 {
+    font-family: 'LeferiBaseType-RegularA';
+    color: #ffcbe8;
+    text-shadow: 3px 0px 0px #ccc;
+    font-size: 60px;
+    padding-bottom: 10px;
+ }
+ .youtube_wrap .youtube_menu {
+    font-family: 'LeferiBaseType-RegularA';
+     display: flex;
+     justify-content: center;
+     margin-bottom: 30px;
+ }
+ .youtube_wrap .youtube_menu li {
+     height: 45px;
+     line-height: 45px;
+     padding: 0 30px;
+     border: 1px solid #ccc;
+     border-radius: 50px;
+     box-sizing: border-box;
+     margin: 0 5px;
+    }
+    .youtube_wrap .youtube_menu li.on {
+        background-color: #fff;
+        box-shadow: 2px 3px 20px #ffcbe8;
+    }
+    .youtube_wrap .youtube_menu li.on a {
+        color: #ff83c7;
+        font-weight: bold;
+    }
+    .youtube_wrap .youtube_menu li:hover {
+        background-color: #ffa6d7;
+        transition: 0.8s;
+    }
+    .youtube_wrap .youtube_menu li:hover a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .youtube_wrap .youtube_cont .menu_cont {
+        width: 1280px;
+        margin : 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* flex를 해놓으면 계속해서 수평으로 나아가는데 wrap 시켜놓으면 공간 다 차면 알아서 수직으로 떨어짐 */
+        display: none;
+    }
+    .youtube_wrap .youtube_cont .menu_cont.on {
+        display: flex;
+        
+    }
+    .youtube_wrap .menu_cont .box {
+        width: 49%;
+        border: 1px solid #ffdaee;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .youtube_list {
+        width: 100%;
+    }
+    .youtube_list div {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .youtube_list div iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+
+    .youtube_wrap .menu_cont .box .info {
+        padding: 30px;
+    }
+    .youtube_wrap .youtube_cont {
+        font-family: 'LeferiPoint-WhiteObliqueA';
+    }
+    .info h4 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .info dl {
+        display: flex;
+        margin: 10px;
+    }
+    .info dl dt {
+        width: 20%;
+        font-weight: bold;
+    }
+
+    .info dl dd a {
+        font-weight: bold;
+    }
+    .info dl dd:hover a{
+        text-decoration: underline;
+    }
+    h3 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* 2D 디자인 */
+    
+    .g_design {
+        /* margin-top: 100px; */
+        /* background-color: #eee; */
+        background: rgb(252,236,255);
+        background: linear-gradient(0deg, rgba(252,236,255,1) 0%, rgba(255,235,241,1) 100%);
+        padding : 150px 0;
+    }
+
+    .g_design h3 {
+        color: rgba(255,255,250);
+        text-shadow: 5px 5px 15px #ff83c7;
+    }
+
+    .g_design em {
+        width: 1280px;
+        margin: 0 auto; /* em은 inline요소라 일캐해도 정렬이 안돼서 block 처리를 해줘야 한당*/
+        display: block;
+        text-align: right;
+        padding-bottom: 20px;
+        color:#ccc
+    }
+    .g_design .img_list {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .g_design .img_list div {
+        width: 24%;
+    }
+    .g_design .img_list div figure {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+    .g_design .img_list div figure img {
+        transition: 0.8s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .g_design .img_list div ul {
+        background-color: #fff;
+        padding: 20px;
+    }
+    .g_design .img_list div ul li:first-of-type {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    .g_design .img_list div:hover {
+        box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.3);
+    }
+    .g_design .img_list div:hover figure img {
+        transform:scale(1.2);
+    }
+
+    /* 푸터 footer */
+    footer {
+        /* background-color: #333; */
+        /* background: rgb(253,245,255);
+background: linear-gradient(0deg, rgba(253,245,255,1) 0%, rgba(255,240,249,1) 100%);​ */
+        color: #777;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    footer a {
+        color:#333;
+    }
+    footer ul li {
+        width: 220px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #333;
+        margin: 10px auto;
+        border-radius: 50px;
+    }
+    footer ul li:first-of-type{
+        background-color: #ffa6d7;
+        border: 1px solid #ffa6d7;
+
+    }
+    footer ul li:first-of-type a {
+        color: #fff;;
+        font-weight: bold;
+    }
+    footer p {
+        font-size: 14px;
+        color:#ddd;
+        margin-top: 25px;
+    }
